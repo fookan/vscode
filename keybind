@@ -1,0 +1,77 @@
+// 入れいている機能拡張
+// 日本語
+// editor config for vs code
+// emacs friendly keymap
+// 既定値を上書きするには、このファイル内にキー バインドを挿入します
+[
+    {
+       "key": "ctrl+x [",
+       "command": "cursorTop",
+       "when": "editorTextFocus"
+    },
+    {
+       "key": "ctrl+x ]",
+       "command": "cursorBottom",
+       "when": "editorTextFocus"
+    },
+    {
+       "key": "ctrl+x [",
+       "command": "cursorTopSelect",
+       "when": "editorHasSelection"
+    },
+    {
+       "key": "ctrl+x ]",
+       "command": "cursorBottomSelect",
+       "when": "editorHasSelection"
+    },
+    {
+        "key": "tab",
+        "command": "acceptSelectedSuggestionOnEnter",
+        "when": "acceptSuggestionOnEnter && editorTextFocus && suggestWidgetVisible && suggestionMakesTextEdit"
+    },
+    {
+        "key": "ctrl+x 2",
+        "command": "workbench.action.splitEditorDown",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+x 3",
+        "command": "workbench.action.splitEditorRight",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+g alt+g",
+        "command": "workbench.action.gotoLine",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+f",
+        "command": "editor.action.jumpToBracket",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+b",
+        "command": "editor.action.jumpToBracket",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+tab",
+        "command": "editor.action.revealDefinition",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+s",
+        "command": "editor.action.referenceSearch.trigger",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+/",
+        "command": "undo",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+u",
+        "command": "redo",
+        "when": "textInputFocus && !editorReadonly"
+    }    
+]
