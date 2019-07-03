@@ -1,9 +1,173 @@
-// 入れいている機能拡張
-// 日本語
-// editor config for vs code
-// emacs friendly keymap
 // 既定値を上書きするには、このファイル内にキー バインドを挿入します
 [
+    {
+        "key": "ctrl+p",
+        "command": "cursorUp",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "cursorDown",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "cursorRight",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "cursorLeft",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "cursorEnd",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "cursorHome",
+        "when": "editorTextFocus"
+    },
+
+    {
+        "key": "ctrl+p",
+        "command": "cursorUpSelect",
+        "when": "editorHasSelection"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "cursorDownSelect",
+        "when": "editorHasSelection"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "cursorRightSelect",
+        "when": "editorHasSelection"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "cursorLeftSelect",
+        "when": "editorHasSelection"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "cursorEndSelect",
+        "when": "editorHasSelection"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "cursorHomeSelect",
+        "when": "editorHasSelection"
+    },
+
+
+    {
+        "key": "ctrl+d",
+        "command": "deleteWordRight",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "deleteLeft",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+f",
+        "command": "cursorWordPartRight",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+b",
+        "command": "cursorWordStartLeft",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+v",
+        "command": "cursorPageDown",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+v",
+        "command": "cursorPageUp",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+x ctrl+s",
+        "command": "workbench.action.files.save",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+x ctrl+w",
+        "command": "workbench.action.files.saveAs",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+x ctrl+f",
+        "command": "workbench.action.quickOpen",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+s",
+        "command": "actions.find",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+s",
+        "command": "editor.action.nextMatchFindAction",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "editor.action.previousMatchFindAction",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+x",
+        "command": "workbench.action.showCommands",
+        "when": "editorTextFocus"
+    },
+    {
+         "key": "ctrl+[BracketLeft]",
+         "command": "cursorRightSelect",
+         "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+w",
+        "command": "editor.action.clipboardCopyAction",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+y",
+        "command": "editor.action.clipboardPasteAction",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "editor.action.clipboardCutAction",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "deleteAllRight",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+x k",
+        "command": "workbench.action.closeActiveEditor",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+x b",
+        "command": "workbench.action.focusNextGroup",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+x o",
+        "command": "workbench.action.focusNextGroup",
+        "when": "editorTextFocus"
+    },
     {
        "key": "ctrl+x [",
        "command": "cursorTop",
@@ -24,11 +188,7 @@
        "command": "cursorBottomSelect",
        "when": "editorHasSelection"
     },
-    {
-        "key": "tab",
-        "command": "acceptSelectedSuggestionOnEnter",
-        "when": "acceptSuggestionOnEnter && editorTextFocus && suggestWidgetVisible && suggestionMakesTextEdit"
-    },
+
     {
         "key": "ctrl+x 2",
         "command": "workbench.action.splitEditorDown",
@@ -73,5 +233,12 @@
         "key": "ctrl+u",
         "command": "redo",
         "when": "textInputFocus && !editorReadonly"
-    }    
+    },
+
+    // キャンセル関連はここに全てかく
+    {
+      "key": "ctrl+g",
+      "command": "cancelSelection",
+      "when": "editorHasSelection && textInputFocus"
+    }
 ]
