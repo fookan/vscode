@@ -1,0 +1,25 @@
+{
+    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorCustomizations" : {
+        // 制御文字列（タブなど）を含め半角空白の色を明るい灰色( "#aaa" )に指定します。
+        "editorWhitespace.foreground": "#aaa",
+        //  インデントガイドの色を明るい青色( "#aaf" )に指定します。
+        "editorIndentGuide.background" : "#aaf",
+    },
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "never",
+    "editor.autoSurround": "never",
+    "editor.foldingStrategy": "indentation",
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "all",
+    "editor.renderControlCharacters": true,
+    "editor.emptySelectionClipboard": false,
+    "editor.find.autoFindInSelection": true,
+    "editor.glyphMargin": false,
+    "editor.overviewRulerBorder": false,
+    "editor.renderIndentGuides": false,
+    "editor.tabSize": 2,
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true
+}
