@@ -3,12 +3,12 @@
     {
         "key": "ctrl+p",
         "command": "cursorUp",
-        "when": "editorTextFocus"
+        "when": "editorTextFocus && !suggestWidgetVisible"
     },
     {
         "key": "ctrl+n",
         "command": "cursorDown",
-        "when": "editorTextFocus"
+        "when": "editorTextFocus && !suggestWidgetVisible"
     },
     {
         "key": "ctrl+f",
@@ -24,7 +24,7 @@
         "key": "ctrl+e",
         "command": "cursorEnd",
         "when": "editorTextFocus"
-    },
+    },    
     {
         "key": "ctrl+a",
         "command": "cursorHome",
@@ -55,7 +55,7 @@
         "key": "ctrl+e",
         "command": "cursorEndSelect",
         "when": "editorHasSelection"
-    },
+    },    
     {
         "key": "ctrl+a",
         "command": "cursorHomeSelect",
@@ -65,7 +65,7 @@
 
     {
         "key": "ctrl+d",
-        "command": "deleteWordRight",
+        "command": "deleteRight",
         "when": "editorTextFocus"
     },
     {
@@ -167,7 +167,7 @@
         "key": "ctrl+x o",
         "command": "workbench.action.focusNextGroup",
         "when": "editorTextFocus"
-    },
+    },    
     {
        "key": "ctrl+x [",
        "command": "cursorTop",
@@ -234,11 +234,21 @@
         "command": "redo",
         "when": "textInputFocus && !editorReadonly"
     },
-
-    // キャンセル関連はここに全てかく
+    
+    // キャンセル処理をかく
     {
-      "key": "ctrl+g",
-      "command": "cancelSelection",
-      "when": "editorHasSelection && textInputFocus"
+        "key": "ctrl+g",
+        "command": "cancelSelection",
+        "when": "editorHasSelection && textInputFocus"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "cancelSelection",
+        "when": "editorTextFocus && !suggestWidgetVisible"
     }
+
+
+    // まだたりないもの
+
+
 ]
