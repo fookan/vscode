@@ -119,6 +119,16 @@
         "when": "findWidgetVisible"
     },
     {
+        "key": "alt+s",
+        "command": "actions.find",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+s",
+        "command": "editor.action.previousMatchFindAction",
+        "when": "findWidgetVisible"
+    },
+    {
         "key": "ctrl+r",
         "command": "editor.action.previousMatchFindAction",
         "when": "editorTextFocus"
@@ -220,11 +230,6 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "alt+s",
-        "command": "editor.action.referenceSearch.trigger",
-        "when": "findWidgetVisible"
-    },
-    {
         "key": "ctrl+/",
         "command": "undo",
         "when": "textInputFocus && !editorReadonly"
@@ -245,7 +250,12 @@
         "key": "ctrl+g",
         "command": "cancelSelection",
         "when": "editorTextFocus && !suggestWidgetVisible"
-    }
+    },
+    {
+        "key": "ctrl+g",
+        "command": "closeFindWidget",
+        "when": "editorFocus && findWidgetVisible"
+      }
 
 
     // まだたりないもの
