@@ -1,4 +1,120 @@
 {
+    // ESlint extension
+    "eslint.enable": true,
+    "eslint.nodePath": "<path to eslint>",
+    "eslint.options": {
+        "parserOptions": {
+            "ecmaVersion": 2018,
+            "sourceType": "module",
+        },
+        "rules": {
+            // 全ての条件式の中括弧を強制
+            "curly": ["error"],
+            // switchでdefault必須
+            "default-case": ["warn"],
+            // dot表記を可能な限り推奨
+            "dot-notation": ["warn"],
+            // dot表記は改行後につける
+            "dot-location": ["error", "property"], // propertiy or object
+            // 末尾セミコロンを強制
+            "semi": ["error", "always"],
+            // 不要なセミコロンはNG
+            "no-extra-semi": ["error"],
+            // シングルクオートを強制
+            "quotes": ["error", "single"],
+            // 等価演算子は厳密にする
+            "eqeqeq": ["error"],
+            // const or let を強制
+            "no-var": ["error"],
+            // 再代入がない限り const を強制
+            "prefer-const": ["error"],
+            // 定数式による条件を警告 ex) if (false) {}
+            "no-constant-condition": ["warn"],
+            // 連続スペースの許可
+            "no-multi-spaces": ["warn"],
+            // alert confirm promptの使用を制限
+            "no-alert": ["error"],
+            // 形無しnullチェック禁止 ex) if (x == null) {}x
+            "no-eq-null": ["error"],
+            // 型変換はきちんと定義する ex) let a = boolean(b);
+            "no-implicit-coercion": ["warn"],
+            // thisの使い方
+            "no-invalid-this": ["error"],
+            // loop内の関数作成禁止
+            "no-loop-func": ["error"],
+            // native objectへの代入禁止　ex)String = Object
+            "no-native-reassign": ["error"],
+            // 関数の引数の際割り当て禁止 ex) fn(x) { x = 100; }
+            "no-param-reassign": ["error"],
+            // 宣言は１回だけ
+            "no-redeclare": ["error"],
+            // 同じものの値の比較をしない ex) if (x === x) {}
+            "no-self-compare": ["error"],
+            // []内の空白の書き方。[の後、]の前に空白なし
+            "array-bracket-spacing": ["error", "never"],
+            // 単一行{}内の空白の書き方{のあと、}の前に空白なし
+            "block-spacing": ["error"],
+            // 改行時の{}の位置。{の前で改行しない
+            "brace-style": ["error"],
+            // ブロック開始前のスペースを強制
+            //"space-before-blocks": ["error"],
+            // カンマ位置は末尾に強制
+            "comma-style": ["error", "last"],
+            // カンマ前後のスペースを許可（垂直方向に統一されたインデントを得るため）
+            "comma-spacing": ["error"],
+            // tabとspaceの混在はNG
+            "no-mixed-spaces-and-tabs": ["error"],
+            // 連続した空行を注意
+            "no-multiple-empty-lines": ["warn", { "max": 2 }],
+            // ネスとされた三元表現はだめ let a = x ? y : z ? e : f
+            "no-nested-ternary" : ["error"],
+            // 関数利用する時の()と空白　ex) fn()
+            "no-spaced-func": ["error"],
+            // 行の末尾の空白注意
+            "no-trailing-spaces": ["warn"],
+            // 改行直前に演算子
+            "operator-linebreak": ["error", "after"],
+            // {の前に空白がいるか
+            "space-before-blocks": ["error"],
+            // 関数の（）の前の空白がいるか
+            "space-before-function-paren": ["error"],
+            // ()内の空白がいるか
+            "space-in-parens": ["error", "never"],
+            // 演算子の前後にはスペースが必要
+            "space-infix-ops": ["error"],
+            // 炭鉱演算子の前の空白
+            "space-unary-ops": ["error"],
+            // return, throw,case 句の後のスペースを強制
+            "space-return-throw-case": ["error"],
+
+            // 情報が不十分な JSDoc を警告
+            //"valid-jsdoc": [2, {
+            //  "requireReturn": false
+            //}],
+            // console メソッドを注意
+            //"no-console": 1,
+            // debugger メソッドを注意
+            //"no-debugger": 1,
+            // 正規表現におけるスペースの利用を許可
+            //"no-regex-spaces": 0,
+            // strict 強制を緩和
+            //"strict": 0,
+
+            // インデントスタイルは2スペースに強制
+            "indent": [2, 2, {
+                "SwitchCase": 2,
+            }],
+
+            // Key:Value におけるコロン前スペースなし、コロン後1スペースを強制
+            // ただし垂直方向にコロン記号を揃えるためのコロン前スペースを認める
+            //"key-spacing": [2, {
+            //    "beforeColon": false,
+            //    "afterColon" : true,
+            //    "align"      : "colon"
+            //}],
+        },
+    },
+
     "workbench.colorTheme": "Visual Studio Dark",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.colorCustomizations" : {
