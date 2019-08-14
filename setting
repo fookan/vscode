@@ -1,7 +1,7 @@
 {
     // ESlint extension
     "eslint.enable": true,
-    "eslint.nodePath": "/Users/masato/.nodebrew/current/bin//eslint",
+    "eslint.nodePath": "<path to eslint>",
     "eslint.options": {
         "parserOptions": {
             "ecmaVersion": 2018,
