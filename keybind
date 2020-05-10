@@ -62,16 +62,19 @@
         "command": "cursorEndSelect",
         "when": "editorTextFocus"
     },
-    { // うまくいかない
-        "key": "ctrl+[BracketLeft]　ctrl+x ctrl+[",
+    { // うまくいかないので、C-@ C[にする。キー３つは無理みたい
+        // "key": "ctrl+[BracketLeft]　ctrl+x [",
+        "key": "ctrl+[BracketLeft] ctrl+[",
         "command": "cursorTopSelect",
-        "when": "editorTextFocus"
+        "when": "textInputFocus"
     },
-    { // うまくいかない
-        "key": "ctrl+[BracketLeft]　ctrl+x ctrl+]",
+    { // うまくいかないので、C-@ C]にする。キー３つは無理みたい
+        // "key": "ctrl+[BracketLeft]　ctrl+x ]",
+        "key": "ctrl+[BracketLeft] ctrl+]",
         "command": "cursorBottomSelect",
-        "when": "editorTextFocus"
+        "when": "textInputFocus"
     },
+    
     // カーソル移動での選択
     {
         "key": "ctrl+p",
@@ -103,13 +106,15 @@
         "command": "cursorHomeSelect",
         "when": "editorHasSelection"
     },
-    { // うまくいかない
-        "key": "ctrl+x [",
+    { // うまくいかないので、 ctrl+[にする
+        // "key": "ctrl+x [",
+        "key": "ctrl+[",
         "command": "cursorTopSelect",
         "when": "editorHasSelection"
     },
-    { // うまくいかない
-        "key": "ctrl+x ]",
+    { // うまくいかないので、ctrl+]にする
+        // "key": "ctrl+x ]",
+        "key": "ctrl+]",
         "command": "cursorBottomSelect",
         "when": "editorHasSelection"
     },
@@ -298,7 +303,6 @@
         "when": "interfaceOverviewVisible"
     },
     */
-
     // デフォルトのctrl+gキーの処理をctrl+gに割り当てる
     {
         "key": "ctrl+g",
@@ -490,7 +494,6 @@
         "command": "notifications.hideToasts",
         "when": "notificationToastsVisible"
     },
-
     // まだたりないもの
     // 開いているエディター一覧に移動
     {
