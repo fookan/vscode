@@ -257,7 +257,7 @@
     {
         "key": "alt+g",
         "command": "workbench.action.gotoLine",
-        "when": "editorTextFocus"
+        //"when": "editorTextFocus"
     },
     // 括弧移動
     {
@@ -298,7 +298,7 @@
         "when": "interfaceOverviewVisible"
     },
     */
-    
+
     // デフォルトのctrl+gキーの処理をctrl+gに割り当てる
     {
         "key": "ctrl+g",
