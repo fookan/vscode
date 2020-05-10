@@ -138,10 +138,25 @@
         "command": "workbench.action.showCommands",
         "when": "editorTextFocus"
     },
+        {
+        "key": "ctrl+[BracketLeft] ctrl+f",
+        "command": "cursorRightSelect",
+        "when": "editorTextFocus"
+    },
     {
-         "key": "ctrl+[BracketLeft]",
-         "command": "cursorRightSelect",
-         "when": "editorTextFocus"
+        "key": "ctrl+[BracketLeft] ctrl+b",
+        "command": "cursorLeftSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+[BracketLeft] ctrl+u",
+        "command": "cursorUpSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+[BracketLeft] ctrl+n",
+        "command": "cursorDownSelect",
+        "when": "editorTextFocus"
     },
     {
         "key": "alt+w",
@@ -210,7 +225,7 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "alt+g alt+g",
+        "key": "alt+g",
         "command": "workbench.action.gotoLine",
         "when": "editorTextFocus"
     },
