@@ -31,6 +31,43 @@
         "command": "cursorHome",
         "when": "editorTextFocus"
     },
+    // 単語単位移動
+    {
+        "key": "alt+f",
+        "command": "cursorWordPartRight",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+b",
+        "command": "cursorWordStartLeft",
+        "when": "editorTextFocus"
+    },
+    // ページスクロール
+    {
+        "key": "ctrl+v",
+        "command": "cursorPageDown",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+v",
+        "command": "cursorPageUp",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+x [",
+        "command": "cursorTop",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+,",
+        "command": "cursorTop",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+.",
+        "command": "cursorBottom",
+        "when": "editorTextFocus"
+    },
     // 選択開始
     {
         "key": "ctrl+[BracketLeft] ctrl+f",
@@ -68,13 +105,22 @@
         "command": "cursorTopSelect",
         "when": "textInputFocus"
     },
+    {
+        "key": "ctrl+[BracketLeft] shift+alt+,",
+        "command": "cursorTopSelect",
+        "when": "textInputFocus"
+    },
     { // うまくいかないので、C-@ C]にする。キー３つは無理みたい
         // "key": "ctrl+[BracketLeft]　ctrl+x ]",
         "key": "ctrl+[BracketLeft] ctrl+]",
         "command": "cursorBottomSelect",
         "when": "textInputFocus"
     },
-    
+    {
+        "key": "ctrl+[BracketLeft] shift+alt+.",
+        "command": "cursorBottomSelect",
+        "when": "textInputFocus"
+    },
     // カーソル移動での選択
     {
         "key": "ctrl+p",
@@ -112,10 +158,20 @@
         "command": "cursorTopSelect",
         "when": "editorHasSelection"
     },
+    {
+        "key": "shift+alt+,",
+        "command": "cursorTopSelect",
+        "when": "editorHasSelection"
+    },
     { // うまくいかないので、ctrl+]にする
         // "key": "ctrl+x ]",
         "key": "ctrl+]",
         "command": "cursorBottomSelect",
+        "when": "editorHasSelection"
+    },
+    {
+        "key": "shift+alt+.",
+        "command": "cursorTopSelect",
         "when": "editorHasSelection"
     },
     // 1文字削除
@@ -127,38 +183,6 @@
     {
         "key": "ctrl+h",
         "command": "deleteLeft",
-        "when": "editorTextFocus"
-    },
-    // 単語単位移動
-    {
-        "key": "alt+f",
-        "command": "cursorWordPartRight",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+b",
-        "command": "cursorWordStartLeft",
-        "when": "editorTextFocus"
-    },
-    // ページスクロール
-    {
-        "key": "ctrl+v",
-        "command": "cursorPageDown",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+v",
-        "command": "cursorPageUp",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+x [",
-        "command": "cursorTop",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+x ]",
-        "command": "cursorBottom",
         "when": "editorTextFocus"
     },
     // 保存
