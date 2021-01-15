@@ -524,5 +524,10 @@
         "key": "ctrl+x ctrl+b",
         "command": "workbench.files.action.focusOpenEditorsView",
         "when": "workbench.explorer.openEditorsView.active"
+    },
+    {
+        "key": "alt+space", //本来はctrl+space
+        "command": "toggleSuggestionDetails",
+        "when": "suggestWidgetVisible && textInputFocus"
     }
 ]
