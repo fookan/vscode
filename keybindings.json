@@ -119,4 +119,25 @@
         "command": "workbench.action.quickOpen",
         "when": "editorTextFocus"
     },
+    // copy&paste
+    {
+        "key": "ctrl+shift+c",
+        "command": "editor.action.clipboardCopyAction",
+        "when": "editorTextFocus"
+    },
+    // 設定できないが普通に利用できる
+    // {
+    //     "key": "ctrl+shift+v",
+    //     "command": "editor.action.clipboardPasteAction",
+    //     "when": "editorTextFocus"
+    // },
+    {
+        "key": "ctrl+shift+w",
+        "command": "workbench.action.closeActiveEditor",
+        "when": "editorTextFocus"
+    },    
+    {
+        "key": "ctrl+shift+c",
+        "command": "-workbench.action.terminal.new"
+    },
 ]
