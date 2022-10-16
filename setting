@@ -1,6 +1,9 @@
 {
     "window.zoomLevel": 1,
     "workbench.startupEditor": "none",
+    "liveServer.settings.donotShowInfoMsg": true,
     "terminal.integrated.sendKeybindingsToShell": true,
-    "terminal.integrated.allowChords": false
+    "terminal.integrated.allowChords": false,
+    "git.showCommitInput": false,
+    "git.enableStatusBarSync": false
 }
