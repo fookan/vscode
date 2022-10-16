@@ -1,0 +1,5 @@
+{
+    "window.zoomLevel": 1,
+    "workbench.startupEditor": "none",
+    "terminal.integrated.sendKeybindingsToShell": true
+}
