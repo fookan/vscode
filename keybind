@@ -147,17 +147,17 @@
         "when": "editorTextFocus"
     },
 
-    // これなに？
-    // {
-    //     "key": "ctrl+shift+b",
-    //     "command": "-workbench.action.tasks.build"
-    // },
-    // {
-    //     "key": "ctrl+shift+b",
-    //     "command": "workbench.action.toggleSidebarVisibility"
-    // },
-    // {
-    //     "key": "ctrl+b",
-    //     "command": "-workbench.action.toggleSidebarVisibility"
-    // },
+    // ctrl + shift + b でエクスプローラーの表示/非表示をきりかえる
+    {
+        "key": "ctrl+shift+b",
+        "command": "-workbench.action.tasks.build"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
 ]
